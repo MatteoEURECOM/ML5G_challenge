@@ -61,14 +61,15 @@ The csv file and lidar data of s010 are respectively in
 Note that the lidar data is assumed to be inside the specified folder, unzipped and in the subfolder format "scans_run00000", "scans_run00001"... each of them with then flow__.pcd files
 
 Once the folder are well specified the script can be run and it will produce:
-    - folder obstacles_008 : containing a .npz file with the lidar data for each episode in s008
-    - folder obstacles_009 : containing a .npz file with the lidar data for each episode in s009
-    - folder obstacles_010 : containing a .npz file with the lidar data for each episode in s010
-    - lidar_008.npz : aggregated lidar data for training
-    - lidar_009.npz : aggregated lidar data for validation
-    - lidar_010.npz : aggregated lidar data for testing
-    - coords_labels.h5 : coordinates + labels of train and val
-    - coords_labels_test.h5 : coordinates of testing
+
+- folder obstacles_008 : containing a .npz file with the lidar data for each episode in s008
+- folder obstacles_009 : containing a .npz file with the lidar data for each episode in s009
+- folder obstacles_010 : containing a .npz file with the lidar data for each episode in s010
+- lidar_008.npz : aggregated lidar data for training
+- lidar_009.npz : aggregated lidar data for validation
+- lidar_010.npz : aggregated lidar data for testing
+- coords_labels.h5 : coordinates + labels of train and val
+- coords_labels_test.h5 : coordinates of testing
 
 NOTE: Generating lidar data takes time, two hours or so.
 
