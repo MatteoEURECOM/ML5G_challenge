@@ -11,20 +11,20 @@
 
 1.2 - Python Dependencies
 Python packages:
--numpy==1.17.2
--open3d-python==0.7.0.0
--pandas==1.0.3
--h5py==2.10.0
--tensorflow-gpu==1.14.0
--keras==2.3.1
--matplotlib==3.1.1
+- numpy==1.17.2
+- open3d-python==0.7.0.0
+- pandas==1.0.3
+- h5py==2.10.0
+- tensorflow-gpu==1.14.0
+- keras==2.3.1
+- matplotlib==3.1.1
 - Please run the script  setup.sh to build the Python environment required
 to run our code
 
 The folder contains additional file other than the 4 required these are included in the submission and they are:
--mimo_channels.py
--CSVHandler.py
--models.py
+- mimo_channels.py
+- CSVHandler.py
+- models.py
 
 
 
@@ -42,16 +42,16 @@ IMPORTANT: to run the costumized front end is necessary to specify a base folder
 This parameter is in the first line of beam_train_frontend (-> base_folder_008, base_folder_009) and beam_test_frontend (-> base_folder_010).
 It assumes that the structure is the same as the one provided for the challenge, namely:
 -   The csv file , lidar and ray-tracing data of s008 are respectively in
-        -base_folder+'/raw_data/CoordVehiclesRxPerScene_s008.csv'
-        -base_folder+'/raw_data/s008_Blensor_rosslyn_scans_lidar/'
-        -base_folder+'/raw_data/ray_tracing_data_s008_carrier60GHz/'
+        - base_folder+'/raw_data/CoordVehiclesRxPerScene_s008.csv'
+        - base_folder+'/raw_data/s008_Blensor_rosslyn_scans_lidar/'
+        - base_folder+'/raw_data/ray_tracing_data_s008_carrier60GHz/'
 -   The csv file , lidar and ray-tracing data of s009 are respectively in
-        -base_folder+'/raw_data/CoordVehiclesRxPerScene_s009.csv'
-        -base_folder+'/raw_data/s009_Blensor_rosslyn_scans_lidar/'
-        -base_folder+'/raw_data/ray_tracing_data_s009_carrier60GHz/'
+        - base_folder+'/raw_data/CoordVehiclesRxPerScene_s009.csv'
+        - base_folder+'/raw_data/s009_Blensor_rosslyn_scans_lidar/'
+        - base_folder+'/raw_data/ray_tracing_data_s009_carrier60GHz/'
 -   The csv file and lidar data of s010 are respectively in
-        -base_folder+'/raw_data/CoordVehiclesRxPerScene_s010.csv'
-        -base_folder+'/raw_data/rosslyn_scans/'
+        - base_folder+'/raw_data/CoordVehiclesRxPerScene_s010.csv'
+        - base_folder+'/raw_data/rosslyn_scans/'
 Note that the lidar data is assumed to be inside the specified folder, unzipped and in the subfolder format "scans_run00000", "scans_run00001"... each of them with then flow__.pcd files
 
 Once the folder are well specified the script can be run and it will produce:
@@ -67,10 +67,12 @@ Once the folder are well specified the script can be run and it will produce:
 NOTE: Generating lidar data takes time, two hours or so.
 
 2.2 - Training the model
+
 Training the model can be done by simply running the script beam_train_frontend.py, in fact it used the data generated from the previous step and there is no need to specify folders.
 The output will be the trained weigths of the network which is named as 'trained_model', training curves are also saved.
 
 2.3 - Testing the model
+
 The trained model can be tested on the s010 dataset by running the beam_test_model.py script. It generates the file with the predicted labels named beam_test_pred.csv
 
 3 - Pre-trained model and weights
