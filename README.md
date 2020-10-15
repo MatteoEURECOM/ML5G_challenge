@@ -39,19 +39,25 @@ Step 2.3 creates the predictions beam_test_pred.csv
 2.1 - Getting the features
 
 IMPORTANT: to run the costumized front end is necessary to specify a base folders of s008, s009 and s010 that contain the unzipped raw_data.
+
 This parameter is in the first line of beam_train_frontend (-> base_folder_008, base_folder_009) and beam_test_frontend (-> base_folder_010).
+
 It assumes that the structure is the same as the one provided for the challenge, namely:
--   The csv file , lidar and ray-tracing data of s008 are respectively in
-        - base_folder+'/raw_data/CoordVehiclesRxPerScene_s008.csv'
-        - base_folder+'/raw_data/s008_Blensor_rosslyn_scans_lidar/'
-        - base_folder+'/raw_data/ray_tracing_data_s008_carrier60GHz/'
--   The csv file , lidar and ray-tracing data of s009 are respectively in
-        - base_folder+'/raw_data/CoordVehiclesRxPerScene_s009.csv'
-        - base_folder+'/raw_data/s009_Blensor_rosslyn_scans_lidar/'
-        - base_folder+'/raw_data/ray_tracing_data_s009_carrier60GHz/'
--   The csv file and lidar data of s010 are respectively in
-        - base_folder+'/raw_data/CoordVehiclesRxPerScene_s010.csv'
-        - base_folder+'/raw_data/rosslyn_scans/'
+
+The csv file , lidar and ray-tracing data of s008 are respectively in
+- base_folder+'/raw_data/CoordVehiclesRxPerScene_s008.csv'
+- base_folder+'/raw_data/s008_Blensor_rosslyn_scans_lidar/'
+- base_folder+'/raw_data/ray_tracing_data_s008_carrier60GHz/'
+
+The csv file , lidar and ray-tracing data of s009 are respectively in
+- base_folder+'/raw_data/CoordVehiclesRxPerScene_s009.csv'
+- base_folder+'/raw_data/s009_Blensor_rosslyn_scans_lidar/'
+- base_folder+'/raw_data/ray_tracing_data_s009_carrier60GHz/'
+
+The csv file and lidar data of s010 are respectively in
+- base_folder+'/raw_data/CoordVehiclesRxPerScene_s010.csv'
+- base_folder+'/raw_data/rosslyn_scans/'
+
 Note that the lidar data is assumed to be inside the specified folder, unzipped and in the subfolder format "scans_run00000", "scans_run00001"... each of them with then flow__.pcd files
 
 Once the folder are well specified the script can be run and it will produce:
@@ -69,6 +75,7 @@ NOTE: Generating lidar data takes time, two hours or so.
 2.2 - Training the model
 
 Training the model can be done by simply running the script beam_train_frontend.py, in fact it used the data generated from the previous step and there is no need to specify folders.
+
 The output will be the trained weigths of the network which is named as 'trained_model', training curves are also saved.
 
 2.3 - Testing the model
