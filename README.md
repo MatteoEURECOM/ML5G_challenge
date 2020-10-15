@@ -10,14 +10,14 @@
 - Python 3.7
 
 1.2 - Python Dependencies
-- Python packages:
-    -numpy==1.17.2
-    -open3d-python==0.7.0.0
-    -pandas==1.0.3
-    -h5py==2.10.0
-    -tensorflow-gpu==1.14.0
-    -keras==2.3.1
-    -matplotlib==3.1.1
+Python packages:
+-numpy==1.17.2
+-open3d-python==0.7.0.0
+-pandas==1.0.3
+-h5py==2.10.0
+-tensorflow-gpu==1.14.0
+-keras==2.3.1
+-matplotlib==3.1.1
 - Please run the script  setup.sh to build the Python environment required
 to run our code
 
