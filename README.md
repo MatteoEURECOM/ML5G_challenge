@@ -11,16 +11,16 @@
 
 1.2 - Python Dependencies
 - Python packages:
-    numpy==1.17.2
-    open3d-python==0.7.0.0
-    pandas==1.0.3
-    h5py==2.10.0
-    tensorflow-gpu==1.14.0
-    keras==2.3.1
-    matplotlib==3.1.1
-- Please run the script build_env.sh to build the Python environment required
-to run our code.
-    "setup.sh"
+    -numpy==1.17.2
+    -open3d-python==0.7.0.0
+    -pandas==1.0.3
+    -h5py==2.10.0
+    -tensorflow-gpu==1.14.0
+    -keras==2.3.1
+    -matplotlib==3.1.1
+- Please run the script  setup.sh to build the Python environment required
+to run our code
+
 The folder contains additional file other than the 4 required these are included in the submission and they are:
 -mimo_channels.py
 -CSVHandler.py
@@ -74,6 +74,7 @@ The output will be the trained weigths of the network which is named as 'trained
 The trained model can be tested on the s010 dataset by running the beam_test_model.py script. It generates the file with the predicted labels named beam_test_pred.csv
 
 3 - Pre-trained model and weights
+
 The folder already contains the file trained_model.h5 with the trained network.
 
 IF YOU HAVE ANY PROBLEM CONTACT ME AT: zecchin@eurecom.fr
